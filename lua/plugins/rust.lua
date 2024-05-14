@@ -103,6 +103,27 @@ return {
                   ["async-recursion"] = { "async_recursion" },
                 },
               },
+              inlayHints = {
+                bindingModeHints = {
+                  enable = true,
+                },
+                closureCaptureHints = {
+                  enable = true,
+                },
+                closureReturnTypeHints = {
+                  enable = true,
+                },
+                expressionAdjustmentHints = {
+                  enable = true,
+                },
+                implicitDrops = {
+                  enable = true,
+                },
+                lifetimeElisionHints = {
+                  enable = true,
+                },
+                
+              }
             },
           },
         },
@@ -117,7 +138,9 @@ return {
       "neovim/nvim-lspconfig",
       opts = {
         servers = {
-          rust_analyzer = {},
+          rust_analyzer = {
+            mason = false,
+          },
           taplo = {
             keys = {
               {

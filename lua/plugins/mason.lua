@@ -1,4 +1,4 @@
-return {
+return { {
     "williamboman/mason.nvim",
     lazy = true,
     opts = {
@@ -16,4 +16,13 @@ return {
             download_url_template = "https://gh.idayer.com/https://github.com/%s/releases/download/%s/%s",
         },
     }
+},
+-- {
+--     "williamboman/mason-lspconfig.nvim",
+--     lazy = true,
+--     opts = {
+--         automatic_installation = { exclude = { "rust_analyzer" } },
+--     }
+-- },
+
 }
